@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spacebar Click Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Spacebar Speed Test</h1>
+    <p>Choose your test duration and press the spacebar as fast as you can!</p>
+
+    <div class="timer-options">
+      <button class="time-btn" data-time="5">5s</button>
+      <button class="time-btn" data-time="10">10s</button>
+      <button class="time-btn" data-time="20">20s</button>
+      <button class="time-btn" data-time="30">30s</button>
+    </div>
+
+    <div class="test-area">
+      <div class="counter" id="count">0</div>
+      <div class="timer" id="time">0</div>
+    </div>
+
+    <button id="startBtn" disabled>Start Test</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
