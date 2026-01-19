@@ -1,3 +1,4 @@
+/* ===== Global Styles ===== */
 body {
   font-family: Arial, sans-serif;
   background: #0A2540;
@@ -5,23 +6,56 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 .container {
   background: #ffffff;
   color: #000;
-  padding: 30px;
+  padding: 30px 25px;
   border-radius: 15px;
-  text-align: center;
-  width: 350px;
+  text-align: center; /* Center all text content */
+  width: 380px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center lists and other elements */
 }
 
+/* ===== Headings & Paragraphs ===== */
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #162447;
 }
 
+h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #1abc9c;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ===== Lists ===== */
+ol, ul {
+  text-align: center; /* Center list items */
+  margin: 10px 0 20px 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* ===== Timer Options Buttons ===== */
 .timer-options {
   margin: 20px 0;
 }
@@ -34,6 +68,7 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   color: #fff;
+  transition: transform 0.2s, opacity 0.2s;
 }
 
 /* Different colors for buttons */
@@ -42,18 +77,41 @@ h1 {
 .time-btn[data-time="20"] { background: #e67e22; }
 .time-btn[data-time="30"] { background: #e74c3c; }
 
+/* Hover effect */
+.time-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* ===== Counter & Timer ===== */
+.test-area {
+  margin: 20px 0;
+}
+
 .counter {
   font-size: 60px;
-  margin: 20px 0;
+  margin: 15px 0;
+  color: #162447;
 }
 
 .timer {
   font-size: 25px;
   margin-bottom: 20px;
+  color: #e74c3c;
 }
 
+/* ===== Start Button ===== */
 #startBtn {
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 18px;
   cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+#startBtn:hover {
+  transform: scale(1.05);
 }
