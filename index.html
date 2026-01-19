@@ -1,31 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Spacebar Click Test</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceBar - Explore the Universe</title>
+    <style>
+        /* ===== Color Palette (Changed) ===== */
+        :root {
+            --primary-color: #1a1a2e; /* Dark blue background */
+            --secondary-color: #162447; /* Slightly lighter blue */
+            --accent-color: #fca311; /* Orange for buttons and highlights */
+            --text-color: #eaeaea; /* Light text */
+        }
+
+        /* ===== Global Styles ===== */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: var(--primary-color);
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .hero button {
+            background-color: var(--accent-color);
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: var(--primary-color);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* ===== Features Section ===== */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--secondary-color);
+            padding: 30px;
+            border-radius: 10px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: var(--secondary-color);
+            padding: 30px 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Spacebar Speed Test</h1>
-    <p>Choose your test duration and press the spacebar as fast as you can!</p>
+    <!-- Header -->
+    <header>
+        <h1>SpaceBar Test</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <div class="timer-options">
-      <button class="time-btn" data-time="5">5s</button>
-      <button class="time-btn" data-time="10">10s</button>
-      <button class="time-btn" data-time="20">20s</button>
-      <button class="time-btn" data-time="30">30s</button>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Discover the Wonders of space bar click test</h2>
+        <p>Explore interactive tools, learn about the universe, and experience the cosmos in a whole new way. Everything is designed to be simple, intuitive, and engaging for all space enthusiasts.</p>
+        <button>Get Started</button>
+    </section>
 
-    <div class="test-area">
-      <div class="counter" id="count">0</div>
-      <div class="timer" id="time">0</div>
-    </div>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="feature-card">
+            <h3>Interactive Simulations</h3>
+            <p>Engage with fun simulations that show how planets, stars, and galaxies move across the universe.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Learning Resources</h3>
+            <p>Access articles, tutorials, and videos that explain astronomy in simple and human-friendly language.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Community Support</h3>
+            <p>Join a community of fellow space enthusiasts and share knowledge, questions, and ideas.</p>
+        </div>
+    </section>
 
-    <button id="startBtn" disabled>Start Test</button>
-  </div>
+    <!-- About Section -->
+    <section id="about" style="padding: 60px 20px; text-align:center;">
+        <h2>About SpaceBar</h2>
+        <p>SpaceBar is your gateway to the universe. Whether you're a beginner or an experienced astronomer, our tools and resources make exploring the cosmos fun and engaging.</p>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 SpaceBar. All rights reserved.</p>
+    </footer>
 </body>
 </html>
